@@ -1,0 +1,56 @@
+@charset "utf-8";
+body { margin:0; padding:0; width:100%;}
+html { padding:0; margin:0;}
+/********** block index **********/
+.body { background: #11081C url(images/body_bg.gif) top repeat-x;  }
+.body_main_page { width:470px; float:left; margin:0; padding:15px 10px;}
+.body_main_page .blogaa { width:45%; float:left; margin:0; padding:10px;}
+.body h2 { font:bold 18px Arial, Helvetica, sans-serif; color:#fff; border-bottom:1px solid #454545; padding:10px 0 10px 0; margin:15px 0;}
+.body h4 { font:bold 18px Arial, Helvetica, sans-serif; color:#fff;  padding:10px 0 10px 0; margin:15px 0;}
+.body h2 span { color:#11081C;}
+.body h3 { font:bold 18px Arial, Helvetica, sans-serif; color:#333333;  padding:10px 0 23px 0; margin:0;}
+.body p { font:normal 12px Arial, Helvetica, sans-serif; color:#fff; line-height:1.8em; padding:5px 5px; margin:0;}
+.body p span { font:normal 11px Arial, Helvetica, sans-serif; color:#b0b0b0; line-height:1.8em;}
+.body a { color:#11081C; text-decoration:none; font:bold italic 12px Arial, Helvetica, sans-serif; float: right; background:url(images/bg_link_a.gif) left no-repeat; padding:0 0 0 20px; margin:0;}
+.body img { float: left; margin:10px 10px; padding:0;}
+.body_resize { width:980px; margin:0 auto; padding:0;}
+.body .body_small { width:280px; float:left; margin:0; padding:20px;}
+.body .body_small a { float:left; color:#ff5c00; text-decoration:none; font:bold 11px Arial, Helvetica, sans-serif; background:url(images/body_a_bg.gif) left no-repeat; padding:0 0 0 20px; margin:0;}
+.body .body_small ul { list-style:none; margin:10px auto; padding:0;}
+.body .body_small li { background:url(images/categosry_ul_li.gif) left no-repeat; margin:3px 0; padding:0 0 0 20px;}
+.body .body_small li a { font:bold 11px Arial, Helvetica, sans-serif; color:#fff; text-decoration:none; padding:0; margin:0; float:none; background:none;}
+.body .body_small li a:hover { color:#11081C; text-decoration:none;}
+.body .body_big { width:620px; float:left; margin:0; padding:20px;}
+.body .body_big ul { list-style:none; margin:10px auto; padding:0;}
+.body .body_big li { font: normal 12px  Arial, Helvetica, sans-serif; color:#fff; background:url(images/categosry_ul_li.gif) left no-repeat; margin:3px 0; padding:0 0 0 25px;}
+.body .body_big .bbloga { width:45%; float:left; margin:10px; padding:0;}
+.body .body_big .bbloga  a.bbloga { color:#fff; text-decoration:none; font:bold 11px Arial, Helvetica, sans-serif; background:url(images/body_a_bg.gif) left no-repeat; padding:0 0 0 20px; margin:0;}/*buttonss*/
+.buttonss { width:505px;  float:left; margin:10px 10px; padding:5px 5px;}
+.buttonss p { text-align:center;}
+.buttonss a { background:none; float:none; padding:6px 6px; margin:0; font: bold 12px Arial, Helvetica, sans-serif; color:#222; text-decoration:none;}
+.buttonss a:hover { border:1px solid #d6d6d6; background:#f6f6f6; color:#29a5aa; text-decoration:none; padding:3px 5px; margin:0;}
+
+/********** contact form **********/
+#contactform { margin:0; padding:5px 10px;}
+#contactform * {
+	color:#2AAAFF;
+}
+#contactform ol { margin:0; padding:0; list-style:none;}
+#contactform li { margin:0; padding:0; background:none; border:none; display:block;}
+#contactform li.buttons { margin:5px 0 5px 0;}
+#contactform label { margin:0; width:110px; display:block; padding:10px 0; color:#f7f8f7; font: bold 12px Arial, Helvetica, sans-serif; text-transform:capitalize; float:left;}
+#contactform label span { color:#F00;}
+#contactform input.text { width:440px; border:1px solid #4c4c4c; margin:10px 0; padding:5px 2px; height:16px; background:#11081C; float:left;}
+#contactform textarea {
+	width:440px;
+	border:1px solid #4c4c4c;
+	margin:10px 0;
+	padding:2px;
+	float:left;
+	background-color: #11081C;
+}
+#contactform li.buttons input { padding:3px 0 3px 110px; margin:0; border:0; color:#FFF; float:left;}
+p.response { text-align:center; color:#2AAAFF; font: normal 11px  Georgia, "Times New Roman", Times, serif; line-height:1.8em; width:auto;}
+
+p.clr, .clr { clear:both; padding:0; margin:0; background:none;}
+li.bg, .bg { clear:both; border-top:1px solid #11081C; padding:0; margin:10px 0; background:none; line-height:0;}

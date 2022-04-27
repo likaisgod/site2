@@ -1,0 +1,4 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<info>
+	<infoitem key="UD_YoneticiSistemi" value="name:Eposta;datatype:string,name:Sifre;datatype:blob" />
+</info>

@@ -1,0 +1,981 @@
+/* ------------------------------------------------------------- */
+/* ---------------------------BRKOR----------------------------- */
+/* ------------------------------------------------------------- */
+
+/* General Styles ---------------------------------------------- */
+
+body {
+    background: url('../resim/bg.png') no-repeat fixed;
+	background-color: #1d1d1d;
+    color: #fff;
+    font-family: 'Segoe UI', 'Open Sans', sans-serif;
+    font-size: 14px;
+    overflow-x: hidden;
+}
+
+a, a:hover, a:active, a:focus {
+    color: #fff;
+    text-decoration: none;
+    outline: none;
+    outline-offset: 0;
+}
+
+
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+    font-family: 'Segoe UI', 'Open Sans', sans-serif;    
+}
+
+h4 {
+    font-size: 16px;
+}
+
+.col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
+    padding-right: 2px;
+    padding-left: 2px;
+}
+
+/* Main styles ------------------------------------------------- */
+
+header {
+    margin-top: 25px;
+}
+
+.face {
+    float: left;
+    margin-right: 25px;
+    height: 85px;
+    width: 85px;
+    border-radius: 43px;
+}
+
+.header-name {
+    margin-top: 17px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.header-subtitle {
+    margin-top: -13px;
+    font-size: 14px;
+}
+
+.social-media {
+    margin-top: 21px;
+    text-align: right;
+}
+
+.header-additional-info {
+    margin-top: 7px;
+    text-align: right;
+    font-size: 12px;
+}
+
+.header-additional-info .glyphicon {
+    margin-right: 14px;
+}
+
+.header-additional-info .glyphicon:last-child {
+    margin-right: 0;
+}
+
+.header-additional-info .glyphicon {
+    margin-left: 7px;
+}
+
+nav {
+    margin-top: 50px;
+}
+
+.menu .active span {
+    background-color: #fff;
+    color: #000;
+}
+
+.menu a {
+    color: #fff;
+	line-height: 33px;
+	-webkit-perspective: 1000px;
+	-moz-perspective: 1000px;
+	perspective: 1000px;
+}
+
+.menu a span {
+	position: relative;
+	display: inline-block;
+	padding: 0 14px;
+	background: #131313;
+	-webkit-transition: -webkit-transform 0.3s;
+	-moz-transition: -moz-transform 0.3s;
+	transition: transform 0.3s;
+	-webkit-transform-origin: 50% 0;
+	-moz-transform-origin: 50% 0;
+	transform-origin: 50% 0;
+	-webkit-transform-style: preserve-3d;
+	-moz-transform-style: preserve-3d;
+	transform-style: preserve-3d;
+}
+
+.csstransforms3d .menu a span::before {
+	position: absolute;
+	top: 100%;
+	left: 0;
+	width: 100%;
+	height: 100%;
+    padding: 0 14px;
+	background: #fff;
+    color: #000;
+	content: attr(data-hover);
+	-webkit-transition: background 0.3s;
+	-moz-transition: background 0.3s;
+	transition: background 0.3s;
+	-webkit-transform: rotateX(-90deg);
+	-moz-transform: rotateX(-90deg);
+	transform: rotateX(-90deg);
+	-webkit-transform-origin: 50% 0;
+	-moz-transform-origin: 50% 0;
+	transform-origin: 50% 0;
+}
+
+.menu a:hover span,
+.menu a:focus span {
+	-webkit-transform: rotateX(90deg) translateY(-22px);
+	-moz-transform: rotateX(90deg) translateY(-22px);
+	transform: rotateX(90deg) translateY(-22px);
+}
+
+.csstransforms3d .menu a:hover span::before,
+.csstransforms3d .menu a:focus span::before {
+	background: #fff;	
+    color: #000;
+}
+
+.wrap-content {
+    background: url('../resim/shadow.png') no-repeat;
+    background-position: center 330px;
+    padding-bottom: 80px;
+}
+
+.box {
+    background-color: #242424;
+    width: 100%;
+    height: 200px;
+    margin-top: 4px;
+    overflow: hidden;
+}
+
+.home .box {
+    background: url('../resim/shade.png') no-repeat top right;
+    background-color: #242424;
+}
+
+.big-box {
+    background-color: #131313;
+    width: 100%;
+    height: 405px;
+    margin-top: 4px;
+    overflow: hidden;
+}
+
+.home .box-profile {
+    background-color: #00a566;
+}
+
+.home .box-portfolio {
+    background-color: #8000b9;
+}
+
+.home .box-education {
+    background-color: #0079b9;
+}
+
+.home .box-experience {
+    background-color: #ff0058;
+}
+
+.home .box-contact {
+    background-color: #b900a4;
+}
+
+.home .box-resume {
+    background-color: #3e3e3e;
+}
+
+/* Profile Photo -------------------------- */
+.profile-box {
+    background: url('../resim/profilresmi.jpg') no-repeat center center;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+/* Profile Photo On Hover ----------------- */
+.profile-box:hover {
+    background: url('../resim/profilresmi2.jpg') no-repeat center center;
+}
+
+.portfolio .big-box {
+    background: url('../resim/zoom.png') no-repeat center 30%;
+    background-color: #000;
+    height: auto;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.portfolio .big-box:hover {
+    background: url('../resim/zoom.png') no-repeat center center;
+    background-color: #000;
+}
+
+.portfolio .big-box:hover img {
+    opacity: 0.5;
+}
+
+.portfolio img {
+    width: 100%;
+    filter: url(filters.html#grayscale); /* Firefox 3.5+ */
+    filter: gray; /* IE6-9 */
+    -webkit-filter: grayscale(1); /* Google Chrome, Safari 6+ & Opera 15+ */
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.portfolio img:hover {
+    filter: none;
+    -webkit-filter: grayscale(0);
+}
+
+.box-text {
+    padding: 15px 20px 15px 25px;
+    color: #fff;
+}
+
+.mask {
+    background: #000;
+    width: 100%;
+    height: 100%;
+    opacity: .75;
+    -webkit-transform: translate(0, 100%);
+    -moz-transform: translate(0, 100%);
+    transform: translate(0, 100%);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.home .box:hover .mask {
+    -webkit-transform: translate(0, 0);
+    -moz-transform: translate(0, 0);
+    transform: translate(0, 0);
+}
+
+.home .box:hover .title {
+    top: -60px;
+}
+
+.home .box .glyphicon {
+    position: relative;
+    top: -205px;
+    left: 35px;
+    margin-left: -9px;
+    font-size: 24px;
+    color: rgba(255, 255, 255, 0.75);
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.home .box:hover .glyphicon {
+    top: -195px;
+}
+
+.box .title {
+    position: relative;
+    font-size: 16px;
+    top: -45px;
+    left: 25px;
+    color: #fff;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.home .box-twitter .title {
+    top: 25px;
+}
+
+.home .box-twitter:hover .title {
+    top: 25px;
+}
+
+.home .box {
+    cursor: pointer;
+}
+
+.home .box-twitter {
+    background: none;
+    background-color: #00ADFF;
+    height: 404px;
+}
+
+.raise .box {
+    margin-top: -200px;
+}
+
+.display-none {
+    display: none;
+}
+
+.on {
+    display: block !important;
+    -webkit-animation: activate .5s ease;
+    -moz-animation: activate .5s ease;
+    -ms-animation: activate .5s ease;
+    -o-animation: activate .5s ease;
+    animation: activate .5s ease;
+}
+
+.off {
+    -webkit-animation: remove .5s ease;
+    -moz-animation: remove .5s ease;
+    -ms-animation: remove .5s ease;
+    -o-animation: remove .5s ease;
+    animation: remove .5s ease;
+    opacity: 0;
+}
+
+.dl-horizontal {
+    margin-bottom: 25px;
+}
+
+.dl-horizontal dt {
+    text-align: left;
+    font-weight: 300;
+    width: 125px;
+    background: rgba(0, 0, 0, 0.75);
+    padding: 7px 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    border-right: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.dl-horizontal dd {
+    margin-left: 125px;
+    background: rgba(0, 0, 0, 0.25);
+    padding: 7px 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.dl-horizontal dd:nth-of-type(1) {
+    padding-bottom: 0 !important;
+}
+
+
+.contact .dl-horizontal {
+    margin-bottom: 25px;
+}
+
+.contact .dl-horizontal dt {
+    text-align: left;
+    font-weight: 300;
+    width: 35px;
+}
+
+.contact .dl-horizontal dd {
+    margin-left: 35px;
+}
+
+.next {
+    position: relative;
+    top: -20px;
+    left: 78%;
+}
+
+.carousel-indicators {
+    top: -6px;
+    left: 90%;
+    width: auto;
+    margin-left: 0;
+    bottom: auto;
+}
+
+.carousel-indicators li, .carousel-indicators .active {
+    background-color: #fff;
+    border: 0;
+}
+
+.portfolio {
+    margin-top: -20px;
+}
+
+.dismiss {
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.25);
+    color: #fff;
+    padding: 5px 7px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.dismiss:hover {
+    background-color: #fff;
+    color: #000;
+}
+
+.modal-body {
+    padding: 0;
+}
+
+.progress {
+    height: 30px;
+    border-radius: 0;
+    background-color: rgba(0, 0, 0, 0.25);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.progress-bar {
+    text-align: left;
+    padding: 0 15px;
+}
+
+.progress p {
+    font-size: 13px;
+    margin-top: 5px;
+}
+
+.progress p span {
+    float: right;
+}
+
+.progress .RENK1 {width:1%;background-color: rgb(199,1,199);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK2 {width:2%;background-color: rgb(197,3,197);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK3 {width:3%;background-color: rgb(195,5,195);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK4 {width:4%;background-color: rgb(193,7,193);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK5 {width:5%;background-color: rgb(191,9,191);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK6 {width:6%;background-color: rgb(189,11,189);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK7 {width:7%;background-color: rgb(187,13,187);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK8 {width:8%;background-color: rgb(185,15,185);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK9 {width:9%;background-color: rgb(183,17,183);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK10 {width:10%;background-color: rgb(181,19,181);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK11 {width:11%;background-color: rgb(179,21,179);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK12 {width:12%;background-color: rgb(177,23,177);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK13 {width:13%;background-color: rgb(175,25,175);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK14 {width:14%;background-color: rgb(173,27,173);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK15 {width:15%;background-color: rgb(171,29,171);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK16 {width:16%;background-color: rgb(169,31,169);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK17 {width:17%;background-color: rgb(167,33,167);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK18 {width:18%;background-color: rgb(165,35,165);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK19 {width:19%;background-color: rgb(163,37,163);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK20 {width:20%;background-color: rgb(161,39,161);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK21 {width:21%;background-color: rgb(159,41,159);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK22 {width:22%;background-color: rgb(157,43,157);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK23 {width:23%;background-color: rgb(155,45,155);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK24 {width:24%;background-color: rgb(153,47,153);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK25 {width:25%;background-color: rgb(151,49,151);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK26 {width:26%;background-color: rgb(149,51,149);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK27 {width:27%;background-color: rgb(147,53,147);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK28 {width:28%;background-color: rgb(145,55,145);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK29 {width:29%;background-color: rgb(143,57,143);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK30 {width:30%;background-color: rgb(141,59,141);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK31 {width:31%;background-color: rgb(139,61,139);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK32 {width:32%;background-color: rgb(137,63,137);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK33 {width:33%;background-color: rgb(135,65,135);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK34 {width:34%;background-color: rgb(133,67,133);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK35 {width:35%;background-color: rgb(131,69,131);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK36 {width:36%;background-color: rgb(129,71,129);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK37 {width:37%;background-color: rgb(127,73,127);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK38 {width:38%;background-color: rgb(125,75,125);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK39 {width:39%;background-color: rgb(123,77,123);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK40 {width:40%;background-color: rgb(121,79,121);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK41 {width:41%;background-color: rgb(119,81,119);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK42 {width:42%;background-color: rgb(117,83,117);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK43 {width:43%;background-color: rgb(115,85,115);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK44 {width:44%;background-color: rgb(113,87,113);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK45 {width:45%;background-color: rgb(111,89,111);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK46 {width:46%;background-color: rgb(109,91,109);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK47 {width:47%;background-color: rgb(107,93,107);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK48 {width:48%;background-color: rgb(105,95,105);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK49 {width:49%;background-color: rgb(103,97,103);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK50 {width:50%;background-color: rgb(101,99,101);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK51 {width:51%;background-color: rgb(99,101,99);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK52 {width:52%;background-color: rgb(97,103,97);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK53 {width:53%;background-color: rgb(95,105,95);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK54 {width:54%;background-color: rgb(93,107,93);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK55 {width:55%;background-color: rgb(91,109,91);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK56 {width:56%;background-color: rgb(89,111,89);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK57 {width:57%;background-color: rgb(87,113,87);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK58 {width:58%;background-color: rgb(85,115,85);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK59 {width:59%;background-color: rgb(83,117,83);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK60 {width:60%;background-color: rgb(81,119,81);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK61 {width:61%;background-color: rgb(79,121,79);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK62 {width:62%;background-color: rgb(77,123,77);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK63 {width:63%;background-color: rgb(75,125,75);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK64 {width:64%;background-color: rgb(73,127,73);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK65 {width:65%;background-color: rgb(71,129,71);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK66 {width:66%;background-color: rgb(69,131,69);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK67 {width:67%;background-color: rgb(67,133,67);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK68 {width:68%;background-color: rgb(65,135,65);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK69 {width:69%;background-color: rgb(63,137,63);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK70 {width:70%;background-color: rgb(61,139,61);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK71 {width:71%;background-color: rgb(59,141,59);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK72 {width:72%;background-color: rgb(57,143,57);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK73 {width:73%;background-color: rgb(55,145,55);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK74 {width:74%;background-color: rgb(53,147,53);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK75 {width:75%;background-color: rgb(51,149,51);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK76 {width:76%;background-color: rgb(49,151,49);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK77 {width:77%;background-color: rgb(47,153,47);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK78 {width:78%;background-color: rgb(45,155,45);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK79 {width:79%;background-color: rgb(43,157,43);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK80 {width:80%;background-color: rgb(41,159,41);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK81 {width:81%;background-color: rgb(39,161,39);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK82 {width:82%;background-color: rgb(37,163,37);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK83 {width:83%;background-color: rgb(35,165,35);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK84 {width:84%;background-color: rgb(33,167,33);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK85 {width:85%;background-color: rgb(31,169,31);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK86 {width:86%;background-color: rgb(29,171,29);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK87 {width:87%;background-color: rgb(27,173,27);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK88 {width:88%;background-color: rgb(25,175,25);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK89 {width:89%;background-color: rgb(23,177,23);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK90 {width:90%;background-color: rgb(21,179,21);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK91 {width:91%;background-color: rgb(19,181,19);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK92 {width:92%;background-color: rgb(17,183,17);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK93 {width:93%;background-color: rgb(15,185,15);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK94 {width:94%;background-color: rgb(13,187,13);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK95 {width:95%;background-color: rgb(11,189,11);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK96 {width:96%;background-color: rgb(9,191,9);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK97 {width:97%;background-color: rgb(7,193,7);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK98 {width:98%;background-color: rgb(5,195,5);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK99 {width:99%;background-color: rgb(3,197,3);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+.progress .RENK100 {width:100%;background-color: rgb(1,199,1);border-bottom: 2px solid rgba(0, 0, 0, 0.25);}
+
+
+.icon-title {
+    float: right;
+}
+
+.z-index {
+    z-index: 999;
+}
+
+.modal-box {
+    width: 100%;
+    margin-top: 4px;
+    overflow: hidden;
+}
+
+hr {
+    border-top: 1px dotted rgba(255, 255, 255, 0.05);
+}
+
+hr.hr2 {
+    margin: 20px 0 20px 0;
+    border-top: 5px solid rgba(255, 255, 255, 0.05);
+}
+
+hr.empty {
+    margin: 20px 0 20px 0;
+    border-top: 1px solid transparent;
+}
+
+.map {
+    width: 100%;
+    height: 410px;
+    border: 0;
+}
+
+/* Social Icons ------------------------------------------------ */
+
+.twitter {
+    width: 24px;
+    height: 24px;
+    display: inline-block; 
+}
+
+.facebook {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+
+.youtube {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+
+/* Tooltip ---------------------------------------------------- */
+
+.tooltip {
+    font-size: 12px;
+}
+
+.tooltip.in {
+    opacity: 1;
+}
+
+/* Contact Form ------------------------------------------------ */
+
+form {
+    margin-top: 10px;
+}
+
+.contact-on {
+    position: fixed;
+    bottom: 50px;
+    background: #202020;
+    height: auto;
+    width: 100%;
+    padding-top: 35px;
+    padding-bottom: 25px;
+    z-index: 999;
+    display: none;
+}
+
+.form-control {
+    display: block;
+    width: 100%;
+    height: 35px;
+    padding: 6px 15px;
+    font-size: 12px;
+    color: #fff;
+    background-color: rgba(0, 0, 0, 0.25);
+    background-image: none;
+    border: 0;
+    border-radius: 0;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.form-control:focus {
+    border: 0;
+    background-color: #fff;
+    color: #000;
+}
+
+textarea.form-control {
+    height: 85px;
+    resize: none;
+}
+
+.input-group-addon {
+    color: #FFF;
+    background-color: rgba(0, 0, 0, 0.75);
+    border: 0;
+    border-radius: 0;
+}
+
+/* Buttons ----------------------------------------------------- */
+
+.btn {
+    font-size: 12px;
+    padding: 7px 13px;
+    border-radius: 0px;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+.btn-default {
+    color: #fff;
+    background-color: #000;
+    border-color: #000;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.25);
+}
+
+.btn-primary {
+    background-color: #0089ff;
+    border-color: #0089ff;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.25);
+}
+
+.btn-primary:hover,
+.btn-primary:focus {
+    background-color: #fff;
+    border-color: #fff;
+    color: #000;
+}
+
+.btn-primary:active,
+.btn-primary.active {
+    background-color: #0089ff;
+    border-color: #0089ff;
+    color: #fff;
+}
+
+.btn-success {
+    background-color: #00ba00;
+    border-color: #00ba00;
+    border-bottom: 3px solid rgba(0, 0, 0, 0.25);
+}
+
+.btn-success:hover,
+.btn-success:focus {
+    background-color: #fff;
+    border-color: #fff;
+    color: #000;
+}
+
+.btn-success:active,
+.btn-success.active {
+    background-color: #00ba00;
+    border-color: #00ba00;
+    color: #fff;
+}
+
+.btn-link {
+    color: #000;
+    padding: 5px 7px;
+    height: auto;
+    border-bottom: 3px solid #aaa;
+    font-weight: bold;
+}
+
+.btn-link:hover,
+.btn-link:focus {
+    color: #000;
+    text-decoration: none;
+    border-bottom: 3px solid #000;
+}
+
+.btn-invisible {
+    background-color: transparent;
+    border-color: rgba(255, 255, 255, 0.25);
+    color: #000;
+}
+
+.btn-invisible:hover,
+.btn-invisible:focus {
+    background-color: #000;
+    border-color: #000;
+    color: #fff;
+}
+
+.btn-invisible:active,
+.btn-invisible.active {
+    background-color: #00ba00;
+    border-color: #00ba00;
+    color: #fff;
+}
+
+/* Video Container --------------------------------------------- */
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    padding-top: 30px; 
+    height: 0; 
+    overflow: hidden;
+}
+
+.video-container iframe,
+.video-container object,
+.video-container embed {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+iframe {
+    border: 0;
+}
+
+/* Max width 765px --------------------------------------------- */
+
+@media (max-width:768px) {
+
+.menu a,
+.menu a span {
+    width: 100%;
+}
+    
+.dl-horizontal dd {
+    margin-left: 0;
+}
+    
+.dl-horizontal dd:nth-of-type(1) {
+    padding-bottom: 7px !important;
+}
+
+}
+
+/* Animation --------------------------------------------------- */
+
+.row {
+    -webkit-animation: show-up .75s ease;
+    -moz-animation: show-up .75s ease;
+    -ms-animation: show-up .75s ease;
+    -o-animation: show-up .75s ease;
+    animation: show-up .75s ease
+}
+
+@-webkit-keyframes show-up {
+
+from {
+    opacity:0;
+    -webkit-transform:translateX(-.5em)
+}
+to {
+    opacity:1;
+    -webkit-transform:translateX(0)
+
+}}
+
+@-moz-keyframes show-up {
+from {
+    opacity:0;
+    -moz-transform:translateX(-1.5em)
+}
+to {
+    opacity:1;
+    -moz-transform:translateX(0)
+}}
+
+@-ms-keyframes show-up {
+from {
+    opacity:0;
+    -ms-transform:translateX(-1.5em)
+}
+to {
+    opacity:1;
+    -ms-transform:translateX(0)
+}}
+
+@-o-keyframes show-up {
+from {
+    opacity:0;
+    -o-transform:translateX(-1.5em)
+}
+to {
+    opacity:1;
+    -o-transform:translateX(0)
+}}
+
+@keyframes show-up {
+from {
+    opacity:0;
+    transform:translateX(-1.5em)
+}
+to {
+    opacity:1;
+    transform:translateX(0)
+}}
+
+
+
+
+@-webkit-keyframes remove {
+
+from {
+    opacity: 1;
+    -webkit-transform:scale(1)
+}
+to {
+    opacity: 0;
+    -webkit-transform:scale(.9);
+    display: none;
+}}
+
+@-moz-keyframes remove {
+from {
+    opacity: 1;
+    -moz-transform:scale(1)
+}
+to {
+    opacity: 0;
+    -moz-transform:scale(.9)
+}}
+
+@-ms-keyframes remove {
+from {
+    opacity: 1;
+    -ms-transform:scale(1)
+}
+to {
+    opacity: 0;
+    -ms-transform:scale(.9)
+}}
+
+@-o-keyframes remove {
+from {
+    opacity: 1;
+    -o-transform:scale(1)
+}
+to {
+    opacity: 0;
+    -o-transform:scale(.9)
+}}
+
+@keyframes remove {
+from {
+    opacity: 1;
+    transform:scale(1)
+}
+to {
+    opacity: 0;
+    transform:scale(.9);
+        display: none;
+}}
+
+
+
+
+@-webkit-keyframes activate {
+
+from {
+    opacity: 0;
+    -webkit-transform:translateX(40px);
+}
+to {
+    opacity: 1;
+    -webkit-transform:translateX(0);
+    display: block !important;
+}}
+
+@-moz-keyframes activate {
+from {
+    opacity: 0;
+    -moz-transform:translateX(20px)
+}
+to {
+    opacity: 1;
+    -moz-transform:translateX(0);
+    display: block !important;
+}}
+
+@-ms-keyframes activate {
+from {
+    opacity: 0;
+    -ms-transform:translateX(20px)
+}
+to {
+    opacity: 1;
+    -ms-transform:translateX(0);
+    display: block !important;
+}}
+
+@-o-keyframes activate {
+from {
+    opacity: 0;
+    -o-transform:translateX(20px)
+}
+to {
+    opacity: 1;
+    -o-transform:translateX(0);
+    display: block !important;
+}}
+
+@keyframes activate {
+from {
+    opacity: 0;
+    transform:translateX(40px);
+    
+}
+to {
+    opacity: 1;
+    transform:translateX(0);
+    display: block !important;
+}}
